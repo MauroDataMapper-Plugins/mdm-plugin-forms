@@ -1,0 +1,41 @@
+import java.util.concurrent.TimeUnit
+
+buildscript {
+    repositories {
+        mavenLocal()
+        maven {url 'https://jenkins.cs.ox.ac.uk/artifactory/plugins-snapshot'}
+        maven {url 'https://jenkins.cs.ox.ac.uk/artifactory/plugins-release'}
+        mavenCentral()
+    }
+    dependencies {
+        classpath "uk.ac.ox.softeng.maurodatamapper.gradle:mdm-gradle-plugin:$mdmGradlePluginVersion"
+    }
+}
+
+plugins {
+    id 'groovy'
+}
+
+apply plugin: 'uk.ac.ox.softeng.maurodatamapper.gradle.mdm-gradle'
+
+jar {
+    exclude 'logback.groovy'
+}
+
+logger.quiet(
+    "Available processors: ${Runtime.runtime.availableProcessors()} | " +
+    "Max unit test parallel forks: ${Runtime.runtime.availableProcessors().intdiv(2) ?: 1}")
+
+afterEvaluate {
+
+    configurations.all {
+        // check for updates every build
+        resolutionStrategy.cacheChangingModulesFor 0, TimeUnit.SECONDS
+        resolutionStrategy.cacheDynamicVersionsFor 0, TimeUnit.SECONDS
+    }
+    tasks.withType(JavaExec) {
+        systemProperty 'env.logFileName', project.name
+    }
+}
+
+apply from: 'dependencies.gradle'
