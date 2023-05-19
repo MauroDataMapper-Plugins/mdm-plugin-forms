@@ -5,6 +5,7 @@
       {
         "fieldName": "Order",
         "metadataPropertyName": "order",
+        "description": "Numerical order for form design elements in this section",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "int",
@@ -13,6 +14,7 @@
       {
         "fieldName": "Label",
         "metadataPropertyName": "label",
+        "description": "Letter, number or other ordering instruction associated with the Question", 
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",
@@ -21,6 +23,7 @@
       {
         "fieldName": "Question Instruction",
         "metadataPropertyName": "question_instruction",
+        "description": "Guidance given to the user of the form for answering the question",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",
@@ -29,6 +32,7 @@
       {
         "fieldName": "Answer Instruction",
         "metadataPropertyName": "answer_instruction",
+        "description": "Guidance given to the user of the form for selecting particular answers to the question",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",
@@ -37,6 +41,7 @@
       {
         "fieldName": "Default Value",
         "metadataPropertyName": "default",
+        "description": "The default answer for the question",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",
@@ -45,6 +50,7 @@
       {
         "fieldName": "Endpoint URL",
         "metadataPropertyName": "endpoint_url",
+        "description": "The RESTful URL of the service that provides the answer-list for the question",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",
@@ -53,6 +59,7 @@
       {
         "fieldName": "Image URI",
         "metadataPropertyName": "image_uri",
+        "description": "The URL that resolves to the image the user of the form is required to annotate in response to the question.  May be a dynamically assigned at run time",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",
@@ -61,6 +68,7 @@
       {
         "fieldName": "Units",
         "metadataPropertyName": "units",
+        "description": "The expected units of measure for responses to the question",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",
@@ -69,6 +77,7 @@
       {
         "fieldName": "Read Only",
         "metadataPropertyName": "read_only",
+        "description": "The response to the question cannot be changed by the user of the form.  Normally accompanied by a default value, a calculation based on values in the form, or values set during the form's invocation",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "boolean",
@@ -77,6 +86,7 @@
       {
         "fieldName": "Style",
         "metadataPropertyName": "style",
+        "description": "Styling information about the presentation of answers to the question to the user of the form",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "enumeration",
