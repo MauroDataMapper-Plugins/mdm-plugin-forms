@@ -1,6 +1,6 @@
 [
   {
-    "sectionName": "Item Properties",
+    "sectionName": "Question Properties",
     "fields": [
       {
         "fieldName": "Order",
@@ -14,7 +14,7 @@
       {
         "fieldName": "Label",
         "metadataPropertyName": "label",
-        "description": "Letter, number or other ordering instruction associated with the Question", 
+        "description": "Letter, number or other ordering instruction associated with the Question",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",
@@ -59,7 +59,7 @@
       {
         "fieldName": "Image URI",
         "metadataPropertyName": "image_uri",
-        "description": "The URL that resolves to the image the user of the form is required to annotate in response to the question.  May be a dynamically assigned at run time",
+        "description": "The URL that resolves to the image the user of the form is required to annotate in response to the question",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",

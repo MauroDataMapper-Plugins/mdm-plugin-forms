@@ -15,29 +15,11 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
+package uk.ac.ox.softeng.maurodatamapper.plugins
 
-package uk.ac.ox.softeng.maurodatamapper.plugins.forms.item
+class UrlMappings {
 
-import uk.ac.ox.softeng.maurodatamapper.profile.provider.JsonProfileProviderService
-
-class FormItemProfile extends JsonProfileProviderService {
-    @Override
-    String getMetadataNamespace() {
-        namespace
-    }
-
-    @Override
-    String getDisplayName() {
-        'Form Item'
-    }
-
-    @Override
-    String getJsonResourceFile() {
-        'FormItemProfile.json'
-    }
-
-    @Override
-    List<String> profileApplicableForDomains() {
-        return ['DataElement']
+    static mappings = {
+        // provide plugin url mappings here
     }
 }

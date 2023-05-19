@@ -20,7 +20,7 @@ package uk.ac.ox.softeng.maurodatamapper.plugins.forms.section
 
 import uk.ac.ox.softeng.maurodatamapper.profile.provider.JsonProfileProviderService
 
-class FormSectionProfile extends JsonProfileProviderService {
+class FormSectionProfileProviderService extends JsonProfileProviderService {
     @Override
     String getMetadataNamespace() {
         namespace
