@@ -5,7 +5,7 @@
       {
         "fieldName": "Order",
         "metadataPropertyName": "order",
-        "description": "Numerical order for sections in this form",
+        "description": "Numerical order for form design elements in this form",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "int",
@@ -14,7 +14,7 @@
       {
         "fieldName": "Label",
         "metadataPropertyName": "label",
-        "description": "Name or main prompt text for the section", 
+        "description": "Letter, number or other ordering instruction associated with the Section", 
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",

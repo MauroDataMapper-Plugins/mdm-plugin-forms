@@ -5,7 +5,7 @@
       {
         "fieldName": "Order",
         "metadataPropertyName": "order",
-        "description": "Numerical order for questions in this section",
+        "description": "Numerical order for form design elements in this section",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "int",
@@ -14,7 +14,7 @@
       {
         "fieldName": "Label",
         "metadataPropertyName": "label",
-        "description": "Name or main text for the question", 
+        "description": "Letter, number or other ordering instruction associated with the Question", 
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",
