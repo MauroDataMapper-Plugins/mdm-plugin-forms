@@ -16,11 +16,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package uk.ac.ox.softeng.maurodatamapper.plugins.forms.section
+package uk.ac.ox.softeng.maurodatamapper.plugins.forms.question
 
 import uk.ac.ox.softeng.maurodatamapper.profile.provider.JsonProfileProviderService
 
-class FormSectionProfile extends JsonProfileProviderService {
+class FormQuestionProfileProviderService extends JsonProfileProviderService {
     @Override
     String getMetadataNamespace() {
         namespace
@@ -28,16 +28,16 @@ class FormSectionProfile extends JsonProfileProviderService {
 
     @Override
     String getDisplayName() {
-        'Form Section'
+        'Form Question'
     }
 
     @Override
     String getJsonResourceFile() {
-        'FormSectionProfile.json'
+        'FormQuestionProfile.json'
     }
 
     @Override
     List<String> profileApplicableForDomains() {
-        return ['DataClass']
+        return ['DataElement']
     }
 }

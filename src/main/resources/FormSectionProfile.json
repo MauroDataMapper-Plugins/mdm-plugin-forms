@@ -1,6 +1,6 @@
 [
   {
-    "sectionName": "Section/Subsection/Group Properties",
+    "sectionName": "Section Properties",
     "fields": [
       {
         "fieldName": "Order",
@@ -14,7 +14,7 @@
       {
         "fieldName": "Label",
         "metadataPropertyName": "label",
-        "description": "Letter, number or other ordering instruction associated with the Section", 
+        "description": "Letter, number or other ordering instruction associated with the Section",
         "minMultiplicity": 0,
         "maxMultiplicity": 1,
         "dataType": "string",
