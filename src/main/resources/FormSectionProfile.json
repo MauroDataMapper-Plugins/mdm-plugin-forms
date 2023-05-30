@@ -38,7 +38,8 @@
         "dataType": "enumeration",
         "allowedValues": [
           "Inline",
-          "Tabular"
+          "Tabular",
+          "Hidden"
         ],
         "derived": false
       }
