@@ -20,7 +20,7 @@ package uk.ac.ox.softeng.maurodatamapper.plugins
 import uk.ac.ox.softeng.maurodatamapper.plugins.forms.question.FormQuestionProfileProviderService
 import uk.ac.ox.softeng.maurodatamapper.plugins.forms.section.FormSectionProfileProviderService
 import uk.ac.ox.softeng.maurodatamapper.plugins.forms.datatype.FormDataTypeProvider
-
+import uk.ac.ox.softeng.maurodatamapper.plugins.forms.ui.FormsDataModelViewUIProviderService
 
 import grails.plugins.Plugin
 
@@ -67,6 +67,7 @@ Common profile definitions for use by form import and export plugins. Based on t
             formQuestionProfileProviderService FormQuestionProfileProviderService
             formSectionProfileProviderService FormSectionProfileProviderService
             formDataTypeProvider FormDataTypeProvider
+            formsDataModelViewUIProviderService FormsDataModelViewUIProviderService
         }
     }
 

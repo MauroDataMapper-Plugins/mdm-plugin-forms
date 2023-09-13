@@ -21,5 +21,12 @@ class UrlMappings {
 
     static mappings = {
         // provide plugin url mappings here
+
+        group '/api', {
+
+            group '/forms/ui/', {
+                get "$dataModelId/formModel"(controller: 'formDataModelView', action: 'getFormModel')
+            }
+        }
     }
 }
